@@ -159,29 +159,28 @@
                                                     </textFieldCell>
                                                     <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                                     <prototypeCellViews>
-                                                        <tableCellView id="xcn-5U-fPr">
+                                                        <tableCellView id="4tf-A6-OFb">
                                                             <rect key="frame" x="1" y="1" width="245" height="17"/>
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                             <subviews>
-                                                                <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="XP6-fx-OoU">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="245" height="17"/>
-                                                                    <constraints>
-                                                                        <constraint firstAttribute="height" constant="17" id="93h-oq-0Ax"/>
-                                                                    </constraints>
-                                                                    <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" identifier="SourceCell" title="Table View Cell" id="Fj5-9N-TpT">
+                                                                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8fg-cG-wLb">
+                                                                    <rect key="frame" x="3" y="0.0" width="17" height="17"/>
+                                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="NSActionTemplate" id="Avw-r0-yr1"/>
+                                                                </imageView>
+                                                                <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" allowsExpansionToolTips="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ycj-eW-xaO">
+                                                                    <rect key="frame" x="25" y="0.0" width="220" height="17"/>
+                                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                                                    <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" title="Table View Cell" id="Kbf-Dy-iea">
                                                                         <font key="font" metaFont="system"/>
                                                                         <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                                                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                                                     </textFieldCell>
                                                                 </textField>
                                                             </subviews>
-                                                            <constraints>
-                                                                <constraint firstItem="XP6-fx-OoU" firstAttribute="leading" secondItem="xcn-5U-fPr" secondAttribute="leading" constant="2" id="EXq-eE-cxi"/>
-                                                                <constraint firstItem="XP6-fx-OoU" firstAttribute="centerX" secondItem="xcn-5U-fPr" secondAttribute="centerX" id="QNq-Ys-VLH"/>
-                                                                <constraint firstItem="XP6-fx-OoU" firstAttribute="centerY" secondItem="xcn-5U-fPr" secondAttribute="centerY" id="nXY-9w-pXT"/>
-                                                            </constraints>
                                                             <connections>
-                                                                <outlet property="textField" destination="XP6-fx-OoU" id="E33-Db-A9V"/>
+                                                                <outlet property="imageView" destination="8fg-cG-wLb" id="wZe-ay-qZv"/>
+                                                                <outlet property="textField" destination="Ycj-eW-xaO" id="w7N-KV-QQO"/>
                                                             </connections>
                                                         </tableCellView>
                                                     </prototypeCellViews>
@@ -249,4 +248,7 @@
             <point key="canvasLocation" x="752" y="909"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="NSActionTemplate" width="14" height="14"/>
+    </resources>
 </document>
